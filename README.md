@@ -4,7 +4,7 @@ dublinbikes real time data
 
 <span style="color:orange;"> this repository is under construction </span> 
 
-<p style='color:red'>This is some red text.</p>
+color.Red("We have red")
 
 Two kinds of data are downloaded:
 

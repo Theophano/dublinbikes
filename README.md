@@ -6,14 +6,14 @@ dublinbikes real time data
  
  
 
-## Two kinds of data are downloaded:
+### Two kinds of data are downloaded:
 
-### Static data 
+#### Static data 
 provides stable information like station position, number of bike stands, payment terminal availability, etc.
 Dynamic data provides station state, number of available bikes, number of free bike stands, etc.
 Static data can be downloaded manually in file format or accessed through the API. 
 
-### Dynamic data 
+#### Dynamic data 
 are refreshed every minute and can be accessed only through the API.
 
 

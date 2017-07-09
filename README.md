@@ -17,4 +17,6 @@ Static data can be downloaded manually in file format or accessed through the AP
 are refreshed every minute and can be accessed only through the API.
 
 
+results in JSON format are UTF-8 encoded
+
 <img src="https://user-images.githubusercontent.com/24633926/27997874-f7f9f9dc-64f8-11e7-8e68-a585df5ce772.png" width="15%"></img> 

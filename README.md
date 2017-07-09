@@ -2,9 +2,7 @@
 dublinbikes real time data
 
 
-<span style="color:orange;"> this repository is under construction </span> 
-
-color.Red("We have red")
+ **this repository is under construction
 
 Two kinds of data are downloaded:
 

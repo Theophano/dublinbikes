@@ -22,5 +22,5 @@ results in JSON format are UTF-8 encoded
 <img src="https://user-images.githubusercontent.com/24633926/27997874-f7f9f9dc-64f8-11e7-8e68-a585df5ce772.png" width="15%"></img> 
 
 
-Inline-style: 
+scrn 
 ![alt text](https://github.com/Theophano/markdown-here/raw/master/src/common/images/github.png "Logo Title Text 1")

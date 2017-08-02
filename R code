@@ -7,7 +7,6 @@ library(plyr) #to manipulate data
 library(forecast)
 library(gridExtra)
 
-
 setwd("D:/script0")
 
 d1 <-NULL

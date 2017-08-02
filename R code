@@ -1,3 +1,4 @@
+
 library(ggplot2)
 library(ggmap)
 library(maps)
@@ -7,14 +8,12 @@ library(forecast)
 library(gridExtra)
 
 
-
 setwd("D:/script0")
 
 d1 <-NULL
 paths <- dir(pattern = "\\.csv$")
 names(paths) <- basename(paths)
 d1 <- ldply(paths, read.csv)
-
 
 attach(d1)
 head(d1)

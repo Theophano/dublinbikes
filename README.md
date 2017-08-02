@@ -1,5 +1,7 @@
-# dublinbikes
 
+![dublin_bikes_logo long](https://user-images.githubusercontent.com/24633926/28886789-9c7feaf4-77b2-11e7-875b-f8b2fab128d7.jpg)
+
+ 
  Real-time data was scrapped from JCDecaux website for a college project
  
  

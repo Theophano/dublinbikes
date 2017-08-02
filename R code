@@ -3,9 +3,12 @@ library(ggplot2)
 library(ggmap)
 library(maps)
 library(mapdata)
-library(plyr) #to manipulate data
+library(plyr)
 library(forecast)
 library(gridExtra)
+
+
+############
 
 setwd("D:/script0")
 
@@ -14,7 +17,42 @@ paths <- dir(pattern = "\\.csv$")
 names(paths) <- basename(paths)
 d1 <- ldply(paths, read.csv)
 
+
 attach(d1)
 head(d1)
 names(d1)
 nrow(d1)
+
+#remove columns
+d1 <-d1[-13]
+d1 <-d1[-9]
+d1 <-d1[-14]
+d1 <-d1[-7]
+names(d1)
+
+
+write.csv(d1, "d:/script0/d11.csv")
+head(d1)
+names(d1)
+
+######
+id <-levels(factor(d1$.id))
+d1$hour <-substring(d1$.id, 12,13)
+d1$minute <-substring(d1$.id, 15,16)
+d1$month <-substring(d1$.id, 6,7)
+d1$day <-substring(d1$.id, 9,10)
+
+d1$ts1 <-as.Date(paste0(d1$day,'-', d1$month,'-', 2017), format='%d-%m-%Y')
+d1$weekday <-weekdays(d1$ts1)
+
+
+if (d1$weekday==d1$weekday[6] || d1$weekday==d1$weekday[7] )
+  d1$wend='weend' else d1$wend='we'
+
+
+head(d1)
+names(d1)
+d1 <-d1[-19]
+names(d1)
+
+write.csv(d1, "d:/script0/d1.csv")

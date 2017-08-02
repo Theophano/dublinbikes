@@ -5,8 +5,8 @@
  
  
  <br>
- Real-time data was scrapped from JCDecaux website for a college project
- 
+ Real-time data was scrapped from JCDecaux website for a college project.
+ R script has been developed, which allowed downloading dynamic data every 5 minutes.
  <br>
  <br>
  

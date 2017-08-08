@@ -92,7 +92,7 @@ arr <-auto.arima(ts2)
 
 summary(arr)
 
-farr <- forecast(arr, h=4)
+farr <- forecast(arr, h=12)
 farr
 
 f <-autoplot(farr)+theme_bw()
@@ -106,14 +106,14 @@ plot(available.bikes.decomp)
 accuracy(arr)
 
 
-#####ARIMA (1,0,4)
+#####ARIMA (5,0,4)
 bike.hour <-aggregate(d1$available_bike_stands~d1$hour+d1$ts1, FUN="mean")
 colnames(bike.hour) <-c("Hour","Date","Available_bikes")
 bike.hour <-bike.hour[c(-1, -2, -3, -167),]
 ts2 <- ts(bike.hour$Available_bikes,start=c(1,1),frequency=24)
-g.ts <-autoplot(ts2,mine="Time 	serie (TS)", year.labels=TRUE)+geom_line(col=2)+theme_bw()
+g.ts <-autoplot(ts2,mine="Time series", year.labels=TRUE)+geom_line(col=2)+theme_bw()
 
-arr <- arima(ts2,c(1,0,4))
+arr <- arima(ts2,c(5,0,4))
 farr <- forecast(arr, h=14)
 f <-autoplot(farr)+theme_bw()
 f
